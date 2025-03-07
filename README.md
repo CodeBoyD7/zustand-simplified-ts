@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+// React + TypeScript + Vite + Zustand + React Hook Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+// This project is built with React, TypeScript, and Vite, incorporating Zustand for state management and React Hook Form for form handling.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
+// - React 18 – UI library
+// - TypeScript – Type safety
+// - Vite – Fast build tool
+// - Zustand – Lightweight state management
+// - React Hook Form – Form validation & handling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-repo/react-ts-vite-zustand.git
+cd react-ts-vite-zustand
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 2️⃣ Install Dependencies
+```sh
+npm install
 ```
+
+### 3️⃣ Start the Development Server
+```sh
+npm run dev
+```
+
+### 4️⃣ Build for Production
+```sh
+npm run build
+```
+
+## 📂 Project Structure
+```bash
+📦 src
+ ┣ 📂 store        # Zustand state management
+ ┣ 📂 components   # Reusable components
+ ┣ 📂 hooks        # Custom hooks
+ ┣ 📂 pages        # Page components
+ ┣ 📜 App.tsx      # Main App file
+ ┣ 📜 main.tsx     # Entry point
+ ┗ 📜 index.css    # Global styles
+```
+
+## 🌟 Features
+// - Zustand store for global state
+// - React Hook Form for controlled inputs
+// - Fully typed with TypeScript
+// - Vite for fast development
